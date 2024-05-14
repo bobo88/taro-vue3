@@ -1,10 +1,10 @@
 {
-  "name": "myApp",
+  "name": "taro-vue3",
   "version": "1.0.0",
   "private": true,
   "description": "ycy88",
   "templateInfo": {
-    "name": "vue3-pinia",
+    "name": "vue3-NutUI4",
     "typescript": true,
     "css": "Sass",
     "framework": "Vue3"
@@ -17,6 +17,7 @@
     "build:h5": "taro build --type h5",
     "build:rn": "taro build --type rn",
     "build:qq": "taro build --type qq",
+    "build:jd": "taro build --type jd",
     "build:quickapp": "taro build --type quickapp",
     "dev:weapp": "npm run build:weapp -- --watch",
     "dev:swan": "npm run build:swan -- --watch",
@@ -25,6 +26,7 @@
     "dev:h5": "npm run build:h5 -- --watch",
     "dev:rn": "npm run build:rn -- --watch",
     "dev:qq": "npm run build:qq -- --watch",
+    "dev:jd": "npm run build:jd -- --watch",
     "dev:quickapp": "npm run build:quickapp -- --watch"
   },
   "browserslist": [
@@ -33,7 +35,6 @@
     "ios >= 8"
   ],
   "author": "",
-  "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.6.29",
@@ -48,20 +49,22 @@
     "@tarojs/runtime": "3.6.29",
     "@tarojs/shared": "3.6.29",
     "@tarojs/taro": "3.6.29",
+    "@tarojs/plugin-html": "3.6.29",
     "@tarojs/plugin-framework-vue3": "3.6.29",
-    "vue": "^3.2.24",
-    "pinia": "^2.0.10"
+    "vue": "^3.2.40",
+    "@nutui/nutui-taro": "^4.3.0",
+    "@nutui/icons-vue-taro": "^0.0.9"
   },
   "devDependencies": {
+    "@nutui/auto-import-resolver": "^1.0.0",
     "@babel/core": "^7.8.0",
-    "@tarojs/cli": "3.6.29",
     "@types/webpack-env": "^1.13.6",
-    "postcss": "^8.4.18",
     "webpack": "^5.78.0",
     "@tarojs/taro-loader": "3.6.29",
     "@tarojs/webpack5-runner": "3.6.29",
+    "@tarojs/cli": "3.6.29",
     "@vue/babel-plugin-jsx": "^1.0.6",
-    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/compiler-sfc": "^3.2.40",
     "babel-preset-taro": "3.6.29",
     "css-loader": "3.4.2",
     "eslint-plugin-vue": "^8.0.0",
@@ -73,6 +76,7 @@
     "@typescript-eslint/parser": "^5.20.0",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "typescript": "^4.1.0",
+    "unplugin-vue-components": "^0.26.0",
     "ts-node": "^10.9.1",
     "@types/node": "^18.15.11"
   }
